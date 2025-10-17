@@ -1,0 +1,15 @@
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    border: none;
+}
+.item-quantity-input {
+    width: 70px !important;
+    text-align: center;
+}
+.card-body.text-right {
+    text-align: right;
+}
+.d-flex.justify-content-end.align-items-center > * {
+    margin-left: 5px;
+}

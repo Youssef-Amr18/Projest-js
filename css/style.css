@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.con-1{
+    background-color: #dfdcdc;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+.h2-header{
+    text-transform: uppercase;
+    font-family: crossorigin ;
+}
+.div-btn{
+    margin-left: auto;
+    margin-right: 20px;
+}
+.b1{
+    margin-right:  15px;
+}
+#welcomeMessage{
+    display: inline-block;
+    margin-right: 20px;
+}
+#logoutBtn{
+    margin-right: 30px;
+    margin-left: 10px;
+}
+ button:focus ,button:focus-visible{
+    outline: none !important;
+    box-shadow: none !important;
+}
+.div-btn .b1:hover{
+    background-color: blue;
+    color: #fff !important;
+}
+.div-btn .b2:hover{
+    background-color: green;
+    color: #fff !important;
+}
+.con-2{
+    margin-top: 30px;
+}
+.navb select{
+    width: 220px;
+    padding: 4px 8px;
+    height: 35px;
+    border-radius: 5px;
+    padding-left: 0px;
+    outline: none;
+}
+.navb select:focus{
+    border: 2px solid #00f;
+    box-shadow: 2px 2px 10px rgba(0, 0, 255, 0.7);
+}
+.form-select option{
+    border-radius: 5px;
+}
+.custom-dropdown{
+    border-radius: 10px; 
+    cursor: pointer;
+}
+.input-nav{
+    width: 730px;
+    height: 35px;
+    border: 1px solid darkslategrey;
+    padding: 4px 12px;
+    margin: 0px 10px;
+    border-radius: 5px;
+    outline: none;
+}
+.input-nav:focus{
+    border: 2px solid #00f;
+    box-shadow: 2px 2px 10px rgba(0, 0, 255, 0.7);
+}
+.btn-search{
+    width: 125px;
+    height: 35px;
+    margin-top: -5px;
+    border-radius: 5px;
+    outline: none;
+}
+.items{
+    transition: all 0.5s;
+}
+.items:hover{
+    transform: scale(1.05 , 1.05);
+}
+.card{
+    height: 550px;
+    margin-top: 20px;
+}
+.card img{
+    height: 320px;
+}
+.div-btn button:hover a{
+    color: #fff;
+    text-decoration: none;
+}
+.favorite-icon {
+    cursor: pointer;
+    color: #6e6e6e;
+    transition: color 0.2s;
+    font-size: 1.3rem; 
+    margin-right: 5px;
+}
+.favorite-icon.is-favorited {
+    color: red;
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <title>project-js</title>
+</head>
+<body>
+<header>
+  <div class="container-fluid con-1 d-flex justify-content-between align-items-center">
+    <h2 class="h2-header ml-3">Silvoro</h2>
+    <div id="authBtns" class="div-btn">
+      <a href="login.html"><button class="login header btn b1 border border-primary text-primary">Login</button></a>
+      <a href="register.html"><button class="signup header btn border border-success text-success">Register</button></a>
+    </div>
+    <div id="userInfo" class="d-flex align-items-center">
+  <div class="mr-3 d-flex align-items-center"> 
+    <span id="welcomeMessage"></span>
+    <a href="viewProducts.html"><i class="fa fa-shopping-cart"></i>
+    <span id="cartItems">0</span></a>
+  </div>
+  <button id="logoutBtn" class="btn btn-danger btn-sm">Logout</button>
+</div>
+</header>
+    <!-- ///////////////////// header ///////////////////////////// -->
+     <section class="sec-1">
+        <div class="container con-2">
+            <div class="navb">
+                <select class="form-select">
+                    <option selected hidden>Search By product</option> 
+                    <option value="1">Search by product Name</option>
+                    <option value="2">Search by category</option>
+                </select>
+                <input id="input-search" class="input-nav" type="search" placeholder="Search...">
+                <button id="btn-search" class="btn btn-search btn-dark text-light">Search</button>
+            </div>
+        </div> <!-- / con-2 -->
+     </section> <!-- / sec-1 -->
+<div class="container mt-5">
+    <div class="row g-4"> 
+    <div class="col-md-4 items" data-product-id="item-01">
+        <div class="card d-flex flex-column align-items-center text-center p-3 shadow">
+            <img src="images/silver3.jpg" class="card-img-top" alt="silver">
+            <div class="card-body">
+                <h5 class="card-title">Golden Watch</h5>
+                <p class="card-text">Price: $400</p>
+                <p class="text-muted">Category: Necklace</p>
+                <i class="fas fa-heart icon favorite-icon" data-product-id="01"></i>
+                <button class="add btn btn-primary wrapper">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 items" data-product-id="item-02">
+        <div class="card d-flex flex-column align-items-center text-center p-3 shadow">
+            <img src="images/silver.jpg" class="card-img-top" alt="silver">
+            <div class="card-body">
+                <h5 class="card-title">Silver Rings</h5>
+                <p class="card-text">Price: $150</p>
+                <p class="text-muted">Category: Necklace</p>
+                <i class="fas fa-heart icon favorite-icon" data-product-id="02"></i>
+                <button class="btn btn-primary add wrapper">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 items" data-product-id="item-3">
+        <div class="card d-flex flex-column align-items-center text-center p-3 shadow">
+            <img src="images/silver2.jpg" class="card-img-top" alt="silver">
+            <div class="card-body">
+                <h5 class="card-title">Silver Necklace</h5>
+                <p class="card-text">Price: $200</p>
+                <p class="text-muted">Category: Necklace</p>
+                <i class="fas fa-heart icon favorite-icon" data-product-id="03"></i>
+                <button class="btn btn-primary add wrapper">Add to Cart</button>
+            </div>
+        </div>
+    </div> 
+    <div class="col-md-4 items" data-product-id="item-04">
+        <div class="card d-flex flex-column  align-items-center text-center p-3 shadow">
+            
+            <img src="images/watches.jpg" class="card-img-top" alt="watches">
+            <div class="card-body">
+                <h5 class="card-title">Golden Watch</h5>
+                <p class="card-text">Price: $400</p>
+                <p class="text-muted">Category: Watches</p>
+                <i class="fas fa-heart icon favorite-icon" data-product-id="04"></i>
+                <button class="btn btn-primary add wrapper">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 items" data-product-id="item-05">
+        <div class="card d-flex flex-column align-items-center text-center p-3 shadow">
+            <img src="images/gold.jpg" class="card-img-top" alt="gold">
+            <div class="card-body">
+                <h5 class="card-title">Silver Rings</h5>
+                <p class="card-text">Price: $150</p>
+                <p class="text-muted">Category: Necklace</p>
+                <i class="fas fa-heart icon favorite-icon" data-product-id="05"></i>
+                <button class="add btn btn-primary wrapper">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 items" data-product-id="item-06">
+        <div class="card d-flex flex-column align-items-center text-center p-3 shadow">
+            <img src="images/gold2.jpg" alt="gold"> 
+            <div class="card-body">
+                <h5 class="card-title">Silver Necklace</h5>
+                <p class="card-text">Price: $200</p>
+                <p class="text-muted">Category: Necklace</p>
+                <i class="fas fa-heart icon favorite-icon" data-product-id="06"></i>
+                <button class="btn btn-primary add wrapper">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 items" data-product-id="item-07">
+        <div class="card d-flex flex-column align-items-center text-center p-3 shadow">
+            <img src="images/gold3.jpg" class="card-img-top" alt="gold">
+            <div class="card-body">
+                <h5 class="card-title">Golden Watch</h5>
+                <p class="card-text">Price: $400</p>
+                <p class="text-muted">Category: Rings</p>
+                <i class="fas fa-heart icon favorite-icon" data-product-id="07"></i>
+                <button class="btn btn-primary add wrapper">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 items" data-product-id="item-08">
+        <div class="card d-flex flex-column align-items-center text-center p-3 shadow">
+            <img src="images/gold4.jpg" class="card-img-top" alt="gold">
+            <div class="card-body">
+                <h5 class="card-title">Silver Rings</h5>
+                <p class="card-text">Price: $150</p>
+                <p class="text-muted">Category: Rings</p>
+                <i class="fas fa-heart icon favorite-icon" data-product-id="08"></i>
+                <button class="btn btn-primary add wrapper">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 items" data-product-id="item-09">
+        <div class="card d-flex flex-column align-items-center text-center p-3 shadow">
+            <img src="images/gold5.jpg" class="card-img-top" alt="gold">
+            <div class="card-body">
+                <h5 class="card-title">Silver Necklace</h5>
+                <p class="card-text">Price: $200</p>
+                <p class="text-muted">Category: Bracelet</p>
+                <i class="fas fa-heart icon favorite-icon" data-product-id="09"></i>
+                <button class="btn btn-primary add wrapper">Add to Cart</button>
+            </div>
+        </div>
+    </div> 
+</div>
+ <!-- / parent -->
+</div> 
+<!-- / container -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
